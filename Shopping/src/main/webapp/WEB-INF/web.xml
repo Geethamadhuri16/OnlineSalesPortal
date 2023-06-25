@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Shopping</display-name>
+  <servlet>
+  <servlet-name>verify</servlet-name>
+  <servlet-class>user.verify</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>verify</servlet-name>
+  <url-pattern>/verify</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>register</servlet-name>
+  <servlet-class>user.register</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>register</servlet-name>
+  <url-pattern>/register</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Aregister</servlet-name>
+  <servlet-class>admin.Aregister</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Aregister</servlet-name>
+  <url-pattern>/Aregister</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>averify</servlet-name>
+  <servlet-class>admin.averify</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>averify</servlet-name>
+  <url-pattern>/averify</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>SetCategory</servlet-name>
+  <servlet-class>category.SetCategory</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SetCategory</servlet-name>
+  <url-pattern>/SetCategory</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>addProduct</servlet-name>
+  <servlet-class>product.addProduct</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>addProduct</servlet-name>
+  <url-pattern>/addProduct</url-pattern>
+  
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>addTocart</servlet-name>
+  <servlet-class>user.addTocart</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>addTocart</servlet-name>
+  <url-pattern>/addTocart</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>RemoveFromCart</servlet-name>
+  <servlet-class>user.RemoveFromCart</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>RemoveFromCart</servlet-name>
+  <url-pattern>/RemoveFromCart</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>PlaceOrder</servlet-name>
+  <servlet-class>orders.PlaceOrder</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>PlaceOrder</servlet-name>
+  <url-pattern>/PlaceOrder</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AddToWishList</servlet-name>
+  <servlet-class>wishlist.AddToWishList</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddToWishList</servlet-name>
+  <url-pattern>/AddToWishList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>RemoveFromWishList</servlet-name>
+  <servlet-class>wishlist.RemoveFromWishList</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>RemoveFromWishList</servlet-name>
+  <url-pattern>/RemoveFromWishList</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  <param-name>loggedin</param-name>
+  <param-value>false</param-value>
+  </context-param>
+</web-app>

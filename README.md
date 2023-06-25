@@ -8,6 +8,11 @@ The below are the sql commands which you can run in mysql workbench to build dat
 
 
 //mysql commands
+
+
+
+
+
 create database OnlineSales;
 use OnlineSales;
  CREATE TABLE TheUser (
@@ -21,9 +26,9 @@ use OnlineSales;
     primary Key(userId)
     );
     alter TABLE theuser
-ADD FOREIGN KEY (cartid) REFERENCES cart(cartID);
-select * from theUser;
-ALTER TABLE theuser DROP FOREIGN KEY theuser_ibfk_1;
+    ADD FOREIGN KEY (cartid) REFERENCES cart(cartID);
+    select * from theUser;
+    ALTER TABLE theuser DROP FOREIGN KEY theuser_ibfk_1;
   
     
     
@@ -50,7 +55,7 @@ ALTER TABLE theuser DROP FOREIGN KEY theuser_ibfk_1;
     alter table product add column img varchar(200);
     select * from product;
     ALTER TABLE product
-MODIFY COLUMN price varchar(200);
+    MODIFY COLUMN price varchar(200);
 
 
 
@@ -80,14 +85,14 @@ MODIFY COLUMN price varchar(200);
     foreign Key(userId) references TheUser(userId),
     foreign key(productId) references product(productId)
     );
-     alter table orders alter column DeliCharge set default 0 ;
-  alter table orders alter column quantity set default 1 ;
+    alter table orders alter column DeliCharge set default 0 ;
+    alter table orders alter column quantity set default 1 ;
     select * from orders;
     ALTER TABLE orders
-  DROP column deliCharge;
-  ALTER TABLE orders
-DROP COLUMN quantity;
-alter table orders modify column orderPrice varchar(200);
+    DROP column deliCharge;
+    ALTER TABLE orders
+    DROP COLUMN quantity;
+    alter table orders modify column orderPrice varchar(200);
 
 
 //till here
